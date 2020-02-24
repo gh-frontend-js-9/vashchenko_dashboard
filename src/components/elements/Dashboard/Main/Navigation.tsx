@@ -1,15 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-import home from '../../../assets/images/icons/home-disable.png';
-import homeActive from '../../../assets/images/icons/home-active.png';
-import thread from '../../../assets/images/icons/thread-disable.png';
-import threadActive from '../../../assets/images/icons/thread-active.png';
-import trends from '../../../assets/images/icons/trending-disable.png';
-import trendsActive from '../../../assets/images/icons/trending-active.png';
-import project from '../../../assets/images/icons/project-disable.png';
-import projectActive from '../../../assets/images/icons/project-active.png';
-import contacts from '../../../assets/images/icons/contacts-disable.png';
+import home from '../../../../assets/images/icons/home-disable.png';
+import homeActive from '../../../../assets/images/icons/home-active.png';
+import thread from '../../../../assets/images/icons/thread-disable.png';
+import threadActive from '../../../../assets/images/icons/thread-active.png';
+import trends from '../../../../assets/images/icons/trending-disable.png';
+import trendsActive from '../../../../assets/images/icons/trending-active.png';
+import project from '../../../../assets/images/icons/project-disable.png';
+import projectActive from '../../../../assets/images/icons/project-active.png';
+import contacts from '../../../../assets/images/icons/contacts-disable.png';
 
 
 const  Navigation = () => {

@@ -7,7 +7,6 @@
   }
 }
 
-
 .submenu {
   display: flex;
   padding: 24px;
@@ -16,7 +15,6 @@
   align-items: center;
   @media (max-width: 960px) {
     flex-direction: column;
-
     justify-content: space-around;
   }
 
@@ -26,15 +24,12 @@
 
   &__buttons {
     font-size: 18px;
-
     color: black;
 
     @media (max-width: 960px) {
       display: flex;
-
       width: 100%;
       margin-bottom: 15px;
-
       justify-content: space-around;
     }
   }
@@ -58,11 +53,8 @@
 
   &__filter {
     position: relative;
-
     display: flex;
-
     color: white;
-
     align-items: center;
 
     &-label {
@@ -71,14 +63,8 @@
 
     &-btn {
       position: relative;
-
-      padding-top: 12px;
-      padding-right: 95px;
-      padding-bottom: 12px;
-      padding-left: 20px;
-
+      padding: 12px 95px 12px 20px;
       transition: border-radius linear 0.5s;
-
       border: 2px solid rgba(255, 255, 255, 0.3);
       border-radius: 30px;
 
@@ -86,13 +72,10 @@
         position: absolute;
         top: 15px;
         right: 20px;
-
         width: 10px;
         height: 10px;
-
         content: '';
         transform: rotate(-45deg);
-
         border-bottom: 2px solid white;
         border-left: 2px solid white;
         background: transparent;
@@ -104,30 +87,22 @@
       z-index: 50;
       top: 45px;
       right: 0;
-
       visibility: hidden;
       overflow: hidden;
-
       min-width: 220px;
       max-height: 0;
-
       transition: all linear 0.4s;
       text-align: left;
-
       border: 2px solid rgba(255, 255, 255, 0.3);
       border-radius: 4px;
       background-color: #2196f3;
     }
 
     &-option {
-      padding-top: 5px;
-      padding-right: 5px;
-      padding-bottom: 5px;
-      padding-left: 20px;
+      padding: 5px 5px 5px 20px;
 
       &:hover {
         cursor: pointer;
-
         color: black;
         background-color: rgba(255, 255, 255, 0.5);
       }

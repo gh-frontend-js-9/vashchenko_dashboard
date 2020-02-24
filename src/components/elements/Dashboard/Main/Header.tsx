@@ -2,12 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 // Images and style
-import Logo from '../../../assets/images/logo.png';
-import Avatar from '../../../assets/images/avatar.png';
-import search from '../../../assets/images/icons/search.png'
-import bell from '../../../assets/images/icons/bell.png'
+import Logo from '../../../../assets/images/logo.png';
+import Avatar from '../../../../assets/images/avatar.png';
+import search from '../../../../assets/images/icons/search.png'
+import bell from '../../../../assets/images/icons/bell.png'
 
-import './main.scss';
+import './style/main.scss';
 
 // Temporary Data
 const UserName = 'Vashchenko Alex';

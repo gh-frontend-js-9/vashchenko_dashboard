@@ -7,8 +7,6 @@ class Dashboard {
   }
 
   handleChatsClick() {
-    //при клике на нижнюю иконку навигации(под почтой) - скрываем сообщения и профиль,
-    //показываем на весь экран список чатов, и наоборот
     this.body.addEventListener('click', event => {
       if (event.target.closest('.fa-comment')) {
         document
