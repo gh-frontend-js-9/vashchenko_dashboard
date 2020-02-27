@@ -1,0 +1,129 @@
+.projects{
+  .allProjects{
+    margin-left:60px;
+    margin-right:25px;
+    margin-top:30px;
+    overflow: auto;
+    &-list{
+
+      &-titles{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        font-family: 'Montserrat',sans-serif;
+        color:  #9ea3b4;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        .title{
+          text-align: left;
+          width: 225px;
+          padding-left:50px;
+        }
+        .value{
+          text-align: left;
+          width:165px;
+        }
+        .deadline{
+          text-align: left;
+          width:210px;
+        }
+        .time{
+          text-align: left;
+          width:195px;
+        }
+        .progress{
+          text-align: left;
+          width:390px;
+
+        }
+        .status{
+          width:195px;
+          text-align: left;
+
+        }
+        .assigned{
+          width: 310px;
+          text-align: left;
+
+        }
+      }
+      &-data{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 93px;
+        align-items: center;
+        font-family: 'Montserrat',sans-serif;
+        color:  #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        background-color: #3a3e52;
+        border-radius: 5px;
+        margin-bottom: 25px;
+        border-left: 4px solid #2196f3;
+        span{
+          color:#9ea3b4;
+          font-size: 14px;
+        }
+        .title{
+          padding-left: 50px;
+          text-align: left;
+          width: 225px;
+          display: flex;
+          flex-direction: column;
+        }
+        .value{
+          text-align: left;
+          width:165px;
+        }
+        .deadline{
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          width:210px;
+        }
+        .time{
+          text-align: left;
+          width:195px;
+        }
+        .progress{
+          text-align: left;
+          width:390px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-around;
+          .progress-bar{
+            margin-left: 10px;
+            width: 240px;
+            height: 10px;
+            background-color: #585c70;
+            border-radius: 25px;
+            .progress-state{
+              height: 100%;
+              border-radius: 25px;
+              background-color: #2196f3;
+            }
+          }
+        }
+        .status{
+          text-align: left;
+          width:195px;
+        }
+        .assigned{
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          width: 230px;
+        }
+        .edit{
+          width:80px;
+        }
+      }
+    }
+  }
+}

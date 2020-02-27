@@ -26,3 +26,30 @@ body {
     font-size: $fontSize;
   }
 }
+
+
+.activeTab{
+
+}
+
+#root {
+  background-color: $background-color;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.container {
+  background-color: $background-color;
+  position: relative;
+  margin-top: rem(85px, $fontSize);
+  margin-left: rem(94px, $fontSize);
+  min-height: calc(100vh - 10px);
+  width: 100%;
+  float: left;
+}
+
+

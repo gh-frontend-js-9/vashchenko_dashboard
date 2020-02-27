@@ -7,3 +7,12 @@
   }
   @return $pixels / $context * 1rem;
 }
+
+@keyframes addRotate {
+  0%{
+  }
+
+  50%{
+    transform: rotate(90deg);
+  }
+}

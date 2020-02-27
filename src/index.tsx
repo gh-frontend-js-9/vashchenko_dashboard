@@ -1,13 +1,45 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDom from 'react-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import Form from "./components/login/Form";
+import Home from "./components/dashboard/home/Home";
+import Projects from "./components/dashboard/project/Projects";
+import ProjectsAll from "./components/dashboard/project/ProjectsAll";
+import Workflow from "./components/dashboard/project/workflow/Workflows";
+import Trending from "./components/dashboard/thrends/Trending";
+import Thread from "./components/dashboard/thread/Thread"
+import Contacts from "./components/dashboard/contacts/Contacts"
+
 import './styles/main.scss';
-import * as serviceWorker from './serviceWorker';
-import App from "./App";
 
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+document.addEventListener('DOMContentLoaded',function () {
+  
+  class App extends React.Component{
+    constructor(props: any) {
+      super(props)
+    }
+    
+    render(){
+      return (
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/home" component={ Home }/>
+          <Route path="/trends" component={ Trending }/>
+          <Route path="/projects" component={ Projects }>
+            {/*<Route path="/projects/all" component={ ProjectsAll }/>*/}
+            {/*<Route exact path="/projects/workflow" component={ Workflow }/>*/}
+          </Route>
+          <Route path="/thread" component={ Thread }/>
+          <Route path="/contacts" component={ Contacts }/>
+          <Route exact path="/" component={ Form }/>
+        </Switch>
+      </BrowserRouter>
+      )
+    }
+  }
+  
+  ReactDom.render(
+  <App/>,
+  document.getElementById('root')
+  )
+});

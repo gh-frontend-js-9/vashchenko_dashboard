@@ -1,8 +1,13 @@
-@import "base/reset.scss";
+@import "base/reset";
 @import "utilities/function";
 @import "utilities/variables";
 @import "utilities/mixins";
 @import "base/base";
-@import "components/header";
-@import "components/main-section";
-@import "components/navigation";
+@import "base/scroll";
+@import "components/forms";
+@import "components/topNav";
+@import "components/sideNav";
+@import "components/infoNav";
+@import "components/projects";
+@import "components/thread";
+@import "components/workflow";

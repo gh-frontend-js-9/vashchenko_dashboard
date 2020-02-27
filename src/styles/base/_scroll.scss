@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  width: rem(7, $fontSize);
+  height: rem(7, $fontSize);
+}
+
+::-webkit-scrollbar-track {
+  background: $title-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: rem(100, $fontSize);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: lighten($primary-color, 20%);
+}

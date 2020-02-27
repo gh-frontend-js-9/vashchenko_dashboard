@@ -2,8 +2,8 @@ import React from 'react';
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import Login from './elements/Login/Login';
-import Dashboard from './elements/Dashboard/Main/Main';
+import Login from './OLD_elements/Login/Login';
+import Dashboard from './OLD_elements/Dashboard/Main/Main';
 
 function Routes () {
   return (
