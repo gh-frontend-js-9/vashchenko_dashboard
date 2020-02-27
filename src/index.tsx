@@ -4,8 +4,8 @@ import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Form from "./components/login/Form";
 import Home from "./components/dashboard/home/Home";
 import Projects from "./components/dashboard/project/Projects";
-import ProjectsAll from "./components/dashboard/project/ProjectsAll";
-import Workflow from "./components/dashboard/project/workflow/Workflows";
+  import ProjectsAll from "./components/dashboard/project/ProjectsAll";
+  import Workflow from "./components/dashboard/project/workflow/Workflows";
 import Trending from "./components/dashboard/thrends/Trending";
 import Thread from "./components/dashboard/thread/Thread"
 import Contacts from "./components/dashboard/contacts/Contacts"
