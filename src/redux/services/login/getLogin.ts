@@ -1,21 +1,20 @@
 import axios from 'axios';
-import {logout, authenticated, authenticationError} from "../servicesActions";
+import {logout, login, loginError} from "../servicesActions";
 
 export function axiosLogInGet(url: string) {
-    return (dispatch: string) => {
-
-        if (localStorage.getItem('token')) {
+    return (dispatch: any) => {
+        if (sessionStorage.getItem('token')) {
             axios.get(url)
                 .then((response) => {
-                    if (response.statusText !== 'OK') {
-                        dispatch(logout(true));
-                        throw Error(response.statusText);
-                    } else {
-                        dispatch(authenticated(true));
-                    }
+                  if (response.statusText === 'OK') {
+                    dispatch(login(true));
+                  } else {
+                    dispatch(logout(true));
+                    throw Error(response.statusText);
+                  }
                 })
                 .catch(() =>
-                    dispatch(authenticationError(true)))
+                    dispatch(loginError(true)))
         }
     }
 }

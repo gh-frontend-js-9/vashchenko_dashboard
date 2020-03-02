@@ -12,7 +12,6 @@ export default class Login extends React.Component {
           password: ""
         };
       this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
     }
   
   handleChange(event: any) {
@@ -21,20 +20,12 @@ export default class Login extends React.Component {
       [name]: value
     })
   }
-  
-  handleSubmit(event: any) {
-    const {email, password} = this.state;
-    event.preventDefault();
-    this.props.axiosLogInPost(`${axios.defaults.baseURL}/api/users/login`, email, password);
-  };
     
     render() {
       return (
       <div className='wrapper fadeInDown'>
         <div className='formContent'>
-  
           <Menu />
-  
           <div className='fadeIn first'>
             <NavLink to={'/'}>
               <img src={logo} alt='Welcome to Virtus Dashboard'/>
@@ -49,8 +40,7 @@ export default class Login extends React.Component {
                 className="fadeIn first"
                 name="email"
                 placeholder="Enter your email"
-                value={email}
-                onChange={this.handleChange}/>
+                onChange={this.handleChange}
               />
               <input
                 type="text"
@@ -58,7 +48,6 @@ export default class Login extends React.Component {
                 className="fadeIn second"
                 name="passwords"
                 placeholder="Enter your password"
-                value={password}
               />
               <br />
               <label className="fadeIn third">Remember me: <input name="isGoing" type="checkbox" onChange={() => console.log('Remember me check')} /></label>
