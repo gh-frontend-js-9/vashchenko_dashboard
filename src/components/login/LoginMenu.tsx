@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 export default class LoginMenu extends React.Component {
     constructor(props: any){
@@ -9,15 +9,15 @@ export default class LoginMenu extends React.Component {
     render() {
         return (
         <div>
-          <Link to={'/login'}>
+          <NavLink to={'/login'}>
             <h2 className="inactive underlineHover"> Log In </h2>
-          </Link>
-          <Link to={'/reset'}>
+          </NavLink>
+          <NavLink to={'/reset'}>
             <h2 className="inactive underlineHover"> Reset </h2>
-          </Link>
-          <Link to={'/signup'}>
+          </NavLink>
+          <NavLink to={'/signup'}>
             <h2 className="inactive underlineHover"> Sign Up </h2>
-          </Link>
+          </NavLink>
         </div>
         )
     }

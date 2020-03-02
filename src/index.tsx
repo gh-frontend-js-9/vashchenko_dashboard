@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded',function () {
           <Route path="/thread" component={ Thread }/>
           <Route path="/contacts" component={ Contacts }/>
           <Route exact path="/" component={ Form }/>
+          <Route exact path="/" component={ Form }/>
         </Switch>
       </BrowserRouter>
       )

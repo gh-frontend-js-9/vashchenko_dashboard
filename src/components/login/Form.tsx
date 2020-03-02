@@ -7,6 +7,7 @@ import Reset from './Reset';
 import Sign from './Signup';
 import logo from '../../assets/images/icons/logo.png';
 
+
 export default class Form extends React.Component {
     // constructor(props: any){
     //     super(props);
@@ -20,7 +21,7 @@ export default class Form extends React.Component {
             <div className='formContent'>
               
               <Menu />
-      
+              
               <div className='fadeIn first'>
                 <Link to={'/'}>
                   <img src={logo} alt='Welcome to Virtus Dashboard'/>
