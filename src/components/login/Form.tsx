@@ -16,7 +16,6 @@ export default class Form extends React.Component {
   
     render() {
         return (
-        <BrowserRouter>
           <div className='wrapper fadeInDown'>
             <div className='formContent'>
               
@@ -34,7 +33,6 @@ export default class Form extends React.Component {
               </Switch>
             </div>
           </div>
-        </BrowserRouter>
         )
     }
 }

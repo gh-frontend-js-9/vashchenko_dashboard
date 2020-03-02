@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import Form from "./components/login/Form";
+import Login from "./components/login/Login";
+import Reset from "./components/login/Reset";
+import Signup from "./components/login/Signup";
 import Home from "./components/dashboard/home/Home";
 import Projects from "./components/dashboard/project/Projects";
   import ProjectsAll from "./components/dashboard/project/ProjectsAll";
@@ -31,8 +33,9 @@ document.addEventListener('DOMContentLoaded',function () {
           </Route>
           <Route path="/thread" component={ Thread }/>
           <Route path="/contacts" component={ Contacts }/>
-          <Route exact path="/" component={ Form }/>
-          <Route exact path="/" component={ Form }/>
+          <Route exact path="/" component={ Login }/>
+          <Route exact path="/reset" component={ Reset }/>
+          <Route exact path="/signup" component={ Signup }/>
         </Switch>
       </BrowserRouter>
       )

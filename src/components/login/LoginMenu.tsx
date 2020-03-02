@@ -9,7 +9,7 @@ export default class LoginMenu extends React.Component {
     render() {
         return (
         <div>
-          <NavLink to={'/login'}>
+          <NavLink to={'/'}>
             <h2 className="inactive underlineHover"> Log In </h2>
           </NavLink>
           <NavLink to={'/reset'}>
