@@ -1,3 +1,7 @@
+@import '~bootstrap/dist/css/bootstrap';
+@import '~font-awesome/css/font-awesome.css';
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 @import "base/reset";
 @import "utilities/function";
 @import "utilities/variables";
@@ -13,6 +17,3 @@
 @import "components/workflow";
 
 
-//@import '~bootstrap/dist/css/bootstrap';
-@import '~font-awesome/css/font-awesome.css';
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
