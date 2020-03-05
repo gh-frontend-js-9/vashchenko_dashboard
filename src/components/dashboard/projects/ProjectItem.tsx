@@ -8,7 +8,7 @@ const ProjectItem = (props: any) => {
       <div className="value">{props.cost}</div>
       <div className="deadline">{props.deadline.slice(2, 10)}</div>
       <div className="time">{props.timeSpent} hours</div>
-      <div className='progress-bar'>
+      <div className='progres'>
         {props.progress} %
         <Line percent={props.progress} strokeColor={getProgressColor(props)}/>
       </div>

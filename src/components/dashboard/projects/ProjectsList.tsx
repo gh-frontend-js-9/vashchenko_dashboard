@@ -26,11 +26,12 @@ class ProjectsList extends Component <projectsInterfaceProps, {}> {
           <div className="value">Value</div>
           <div className="deadline">Deadline</div>
           <div className="time">Time spent</div>
-          <div className="status">Progress</div>
+          <div className="progres">Progress</div>
           <div className="status">Status</div>
           <div className="assigned">Assigned to</div>
         </li>
-        {this.props.loads ? <Loads/> : <>{project}</>}      </ul>
+          {this.props.loads ? <Loads/> : <>{project}</>}
+        </ul>
     </div>
       )
   }

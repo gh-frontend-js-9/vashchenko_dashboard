@@ -1,10 +1,13 @@
 .projects{
+  width: 92vw;
   .allProjects{
     margin-left:60px;
     margin-right:25px;
     margin-top:30px;
     overflow: auto;
     &-list{
+      height: 75vh;
+      overflow-y: scroll;
       &-titles{
         display: flex;
         flex-direction: row;
@@ -33,7 +36,7 @@
           text-align: left;
           width:195px;
         }
-        .progress{
+        .progres{
           text-align: left;
           width:390px;
         }
@@ -88,7 +91,7 @@
           text-align: left;
           width:195px;
         }
-        .progress-bar{
+        .progres{
           padding: 0px 40px;
           width: 390px;
         }
