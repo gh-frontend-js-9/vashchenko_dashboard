@@ -14,6 +14,7 @@
   }
   &__content{
     display: flex;
+    font-size: $mainLineHeight;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -48,17 +49,11 @@
         animation:none;
       }
       &:hover .plus{
-        animation: addRotate;
-        animation-duration: 2s;
-        animation-timing-function: ease-in-out;
+        color: $title-color;
       }
     }
     &--search{
       cursor: pointer;
-      &:hover img{
-        transition: all 1.2s ease-in-out;
-        transform: rotate3d(1,1,0,180deg);
-      }
     }
     &--notification{
       cursor: pointer;
@@ -80,14 +75,15 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      &--pic {
-
-      }
       &--slideDown{
         margin-left: 10px;
-        margin-right: 25px;
         cursor: pointer;
       }
+    }
+    &--logout{
+      margin-left: 15px;
+      margin-right: 15px;
+      cursor: pointer;
     }
   }
 }
