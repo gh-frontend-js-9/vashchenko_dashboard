@@ -5,7 +5,6 @@
     margin-top:30px;
     overflow: auto;
     &-list{
-
       &-titles{
         display: flex;
         flex-direction: row;
@@ -37,7 +36,6 @@
         .progress{
           text-align: left;
           width:390px;
-
         }
         .status{
           width:195px;
@@ -90,25 +88,9 @@
           text-align: left;
           width:195px;
         }
-        .progress{
-          text-align: left;
-          width:390px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-around;
-          .progress-bar{
-            margin-left: 10px;
-            width: 240px;
-            height: 10px;
-            background-color: #585c70;
-            border-radius: 25px;
-            .progress-state{
-              height: 100%;
-              border-radius: 25px;
-              background-color: #2196f3;
-            }
-          }
+        .progress-bar{
+          padding: 0px 40px;
+          width: 390px;
         }
         .status{
           text-align: left;
@@ -125,5 +107,10 @@
         }
       }
     }
+  }
+  &-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
