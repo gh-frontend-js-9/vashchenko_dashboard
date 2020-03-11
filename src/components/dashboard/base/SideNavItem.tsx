@@ -23,9 +23,7 @@ export const SideNavItem = () => {
     return(
     <li key={n} className="home menuBox">
       <NavLink key={n} to={icon.href}>
-        <i key={n}
-           className={`${icon.name} fa fa--color fa--hovered fa-2x`}
-           aria-hidden="true"> </i>
+        <i className={`${icon.name} fa fa--color fa--hovered fa-2x`}> </i>
       </NavLink>
     </li>
     )

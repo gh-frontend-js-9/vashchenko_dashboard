@@ -12,7 +12,7 @@ export const InfoBar: React.FunctionComponent = () => {
       <div className="infoNav-right">
         <span>Show projects:
           <select name="showProjects" className="showNav" id="showProjects">
-            <option className="dropdown" value="all">All</option>
+            <option value="all">All</option>
             <option value="completed">Completed</option>
             <option value="design">Design</option>
             <option value="development">Development</option>

@@ -29,7 +29,6 @@ export default class AddNewProject extends Component <projectsInterfaceProps, pr
   }
   
   createNewProject() {
-    localStorage.getItem('token');
     axios({
       method: 'post',
       url: `${axios.defaults.baseURL}/api/projects/`,

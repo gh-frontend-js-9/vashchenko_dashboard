@@ -20,7 +20,8 @@ export class ModalWindow extends React.Component<{}, IState> {
     const modalStyle: ICustomModalStyle = {
       animationTime: 400,
       modalBackground: {
-        height: '100vh'
+        height: '100vh',
+        overflow: 'none'
       },
       modalInner: {
        width: '70%'
